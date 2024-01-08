@@ -127,7 +127,7 @@
         </section>
         <section style="position: relative;">
             <div class="campaign" id="campaign">
-                <h2><span style="color: #8aad48;">Be The Change Join The</span> Campaign</h2>
+                <h2><span style="color: #8aad48;">Be The Change <br> Join The</span> Campaign</h2>
                 <p>4 Simple Steps To Make a Difference</p>
 
             </div>
@@ -138,14 +138,10 @@
                     <progress class="form-progress-bar" min="0" max="100" value="0" step="33"
                         aria-labelledby="form-progress-completion"></progress>
 
-                    <div class="form-progress-indicator one active"></div>
-                    <!-- <div class="step-label"> Choose Category</div> -->
-                    <div class="form-progress-indicator two"></div>
-                    <!-- <div class="step-label"> Take The Pledge</div> -->
-                    <div class="form-progress-indicator three"></div>
-                    <!-- <div class="step-label"> Get Your Certificate</div> -->
-                    <div class="form-progress-indicator four"></div>
-                    <!-- <div class="step-label"> Share Your Picture</div> -->
+                    <div class="form-progress-indicator one active"><label class="prog-cneter" for="info">Fill info</label></div>
+                    <div class="form-progress-indicator two"><label class="prog-cneter" for="pledge">Take The Pledge</label></div>
+                    <div class="form-progress-indicator three"><label class="prog-cneter" for="certificate">Get your Certificate</label></div>
+                    <div class="form-progress-indicator four"><label class="prog-cneter" for="featured">Get featured</label></div>
 
                     <p id="form-progress-completion" class="js-form-progress-completion sr-only" aria-live="polite">0%
                         complete
@@ -157,16 +153,16 @@
                     <!-- Step one -->
                     <div class="form-step js-form-step" data-step="1">
 
-                        <p class="form-instructions"><strong>Fill The Form & Downoad The Certificate</strong></p>
+                        <p class="form-instructions"><strong>Hey there! We just need a tad bit of your info</strong></p>
 
                         <form action="" name="form-step-1">
-                            <div class="doc-logo">
+                            <!-- <div class="doc-logo">
                                 <div class="logo-wonderful">
                                     <div class="dr_wonderful">
                                         <img src="./images/wonderful-logo.png" alt="wonderful-logo">
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
                             <div class="frm-container">
                                 <!-- <label class="desg-sel" for="designation">Choose a Designation:</label>
 
@@ -203,8 +199,6 @@
                                     <input type="text" name="email" id="email" required />
                                     <label for="email">Email*</label>
                                 </div>
-
-
                                 <div class="buttons">
                                     <button type="button" class="btn btn-alt js-reset">Back</button>
 
@@ -223,7 +217,8 @@
                         <form action="" name="form-step-2">
                             <div class="frm-container">
                                 <div class="prom-check-box">
-                                    <h3>I take a pledge that we commited to:</h3>
+                                    <h3>My Promises to My Patients</h3>
+                                    <p>I am dedicated to providing my patients with the utmost care and support during their birthing journey. It is my commitment to:</p>
                                     <input type="checkbox" id="checkAll" name="fav_language">
                                     <label for="check-all"><b style="color: #000;">Check All</b></label> <br>
                                     <input type="checkbox" class="checkbox" id="#" name="fav_language" value="points">
@@ -268,8 +263,8 @@
                         <form action="" name="form-step-3">
                             <div class="frm-container">
                                 <div class="certificate-download">
-                                    <h2>Get Your Certificate</h2>
-                                    <p>Thank you for given us a chance to recognise you.</p>
+                                    <h2>Here’s Your Certificate</h2>
+                                    <p>Thank you doctor, for giving us a chance to recognise you.</p>
                                     <p>We have mailed your <b>Dr. Wonderful Certificate</b> on the given email id.</p>
                                     <p class="wait">But Wait...</p>
                                 </div>
@@ -288,7 +283,7 @@
                     <!-- Step four -->
                     <div class="form-step js-form-step waiting hidden" data-step="4">
 
-                        <p class="form-instructions"><strong>Share Your Picture.</strong></p>
+                        <p class="form-instructions"><strong>We’d love to feature you</strong></p>
 
                         <form action="" name="form-step-4">
                             <div class="frm-container">
@@ -310,8 +305,8 @@
                                 </div>
 
                                 <div class="buttons">
-                                    <button type="button" class="btn btn-alt js-reset">Back</button>
-                                    <button type="submit" class="btn">Submit</button>
+                                    <button type="button" class="btn btn-alt upload-btn">Upload Picture Button</button>
+                                    <!-- <button type="submit" class="btn">Submit</button> -->
                                 </div>
                             </div>
                         </form>

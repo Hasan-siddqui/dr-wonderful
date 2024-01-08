@@ -291,7 +291,7 @@
     margin-top: 88px;
 }
 .img-row {
-    top: -29%;
+    top: -24%;
     right: 221px;
     max-width: 80%;
     width: 70%;
@@ -320,7 +320,7 @@
     width: 20%;
 }
 .doc-icon {
-    width: 26% !important;
+    width: 24% !important;
 }
 .campaign {
     width: 50%;
@@ -345,8 +345,7 @@
 
 /* Form strt */
 .certificate-sec h2 {
-    margin: 0;
-    margin-bottom: 2rem;
+    margin: 10% 0 0 0;
     text-align: center;
     font-weight: normal;
     line-height: 2.2rem;
@@ -372,6 +371,7 @@
 .form-instructions {
     text-align: center;
     line-height: 26px;
+    margin-top: 66px;
 }
 form {
     margin: 2rem auto;
@@ -398,6 +398,14 @@ label {
     top: -0.1rem;
     line-height: 18px;
     margin-bottom: 22px;
+}
+.prom-check-box p {
+    width: 100%;
+    font-size: 17px;
+    line-height: 28px;
+    text-align: center;
+    margin-bottom: 38px;
+
 }
 label:hover {
     cursor: text;
@@ -504,6 +512,14 @@ form .btn {
     width: 100%;
     max-width: 598px;
 }
+label.prog-cneter {
+    position: absolute;
+    left: -16px;
+    top: 29px;
+    font-weight: 600;
+    font-size: 14px;
+    text-align: center;
+}
 progress {
     display: block;
     position: relative;
@@ -588,7 +604,7 @@ progress::-webkit-progress-value {
 }
 .prom-check-box h3 {
     text-align: center;
-    margin-bottom: 38px;
+    margin-bottom: 12px;
 }
 #Designation {
     height: 34px;
