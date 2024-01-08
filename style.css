@@ -395,8 +395,9 @@ label {
     left: 0;
 }
 .prom-check-box label{
-    top: -1.02rem;
+    top: -0.1rem;
     line-height: 18px;
+    margin-bottom: 22px;
 }
 label:hover {
     cursor: text;
@@ -425,7 +426,7 @@ input:focus {
 input:valid {
     border-color: #444;
 }
-input:focus + label, input.hasInput + label {
+.fieldgroup input:focus + label, input.hasInput + label {
     top: -1.4rem;
     font-size: 0.7rem;
 }
@@ -582,7 +583,7 @@ progress::-webkit-progress-value {
 }
 
 .logo-wonderful img {
-    width: 112px;
+    width: 200px;
     margin-top: 20px;
 }
 .prom-check-box h3 {
@@ -630,9 +631,6 @@ progress::-webkit-progress-value {
     width: 598px !important;
     margin: 0 auto;
     margin-top: 42px;
-}
-.logo-wonderful img {
-    width: 82px;
 }
 .logo {
     width: 50%;
@@ -1006,6 +1004,11 @@ progress::-webkit-progress-value {
     }
 }
 @media only screen and (min-width: 1200px){
+    #menuToggle{
+        display: none;
+    }
+}
+@media only screen and (min-width: 1024px){
     #menuToggle{
         display: none;
     }

@@ -41,21 +41,21 @@
     but hey, it's pure CSS magic.
     -->
             <ul id="menu">
-                <a href="#">
+                <a href="#about">
                     <li>ABOUT</li>
                 </a>
-                <a href="#">
+                <a href="#wall-frame">
                     <li>WALL OF FRAME</li>
                 </a>
-                <a href="#">
+                <a href="#campaign">
                     <li>JOIN THE CAMPAIGN</li>
                 </a>
             </ul>
         </div>
         <ul class="nav-list">
-            <li><a href="#">ABOUT</a></li>
-            <li><a href="#">WALL OF FRAME</a></li>
-            <li class="header-join"><a href="#">JOIN THE CAMPAIGN</li></a>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#wall-frame">WALL OF FRAME</a></li>
+            <li class="header-join"><a href="#campaign">JOIN THE CAMPAIGN</li></a>
         </ul>
     </nav>
 
@@ -64,7 +64,7 @@
             <ol class="carousel-indicators">
                 <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                 <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                <!-- <li data-target="#carouselExampleIndicators" data-slide-to="2"></li> -->
             </ol>
             <div class="carousel-inner">
                 <div class="carousel-item active">
@@ -89,13 +89,10 @@
             </a>
         </div>
     </div>
-    <!-- <div class="banner">
-        <img src="./images/banner.png" alt="banner">
-    </div> -->
     <div class="main_container">
         <img class="design-frst" src="./images/design-1.png" alt="design">
         <section>
-            <div class="banner-text">
+            <div class="banner-text" id="about">
                 <div class="pra-text">
                     <h2>You are <i>Wonderful!</i></h2>
                     <p>Welcome to the Wonderful Campaign – an initiative to honour the doctors and healthcare
@@ -129,7 +126,7 @@
             </div>
         </section>
         <section style="position: relative;">
-            <div class="campaign">
+            <div class="campaign" id="campaign">
                 <h2><span style="color: #8aad48;">Be The Change Join The</span> Campaign</h2>
                 <p>4 Simple Steps To Make a Difference</p>
 
@@ -166,41 +163,52 @@
                             <div class="doc-logo">
                                 <div class="logo-wonderful">
                                     <div class="dr_wonderful">
-                                        <img src="./images/dr_wonderful.png" alt="doctor">
-                                    </div>
-                                    <div class="team-wonderful">
-                                        <img src="./images/team-wonderful.png" alt="doctor">
+                                        <img src="./images/wonderful-logo.png" alt="wonderful-logo">
                                     </div>
                                 </div>
                             </div>
                             <div class="frm-container">
-                                <label class="desg-sel" for="designation">Choose a Designation:</label>
+                                <!-- <label class="desg-sel" for="designation">Choose a Designation:</label>
 
                                 <select id="Designation">
                                     <option value="wonderful">Dr. Wonderful</option>
                                     <option value="paramedic-teams">For Paramedic Teams</option>
-                                </select>
+                                </select> -->
 
                                 <div class="fieldgroup">
                                     <input type="text" name="firstName" id="firstName" required />
-                                    <label for="firstName">First name</label>
+                                    <label for="firstName">Your Name*</label>
                                 </div>
 
                                 <div class="fieldgroup">
-                                    <input type="text" name="lastName" id="lastName" required />
-                                    <label for="lastName">Last name</label>
+                                    <input type="text" name="organisation" id="organisation" required />
+                                    <label for="lastName">Your Organisation*</label>
+                                </div>
+                                <div class="form-row">
+                                    <div class="fieldgroup col-md-6">
+                                        <input type="text" name="City" id="City" required />
+                                      <label for="City">City*</label>
+                                    </div>
+                                    <div class="fieldgroup col-md-6">
+                                        <input type="pinCode" name="pinCode" id="pinCode" required />
+                                      <label for="pinCode">Pin Code*</label>
+                                    </div>
+                                  </div>
+                                <div class="fieldgroup">
+                                    <input type="text" name="number" id="number" required />
+                                    <label for="number">Phone Number*</label>
                                 </div>
 
                                 <div class="fieldgroup">
                                     <input type="text" name="email" id="email" required />
-                                    <label for="email">Email</label>
+                                    <label for="email">Email*</label>
                                 </div>
 
 
                                 <div class="buttons">
-                                    <button type="button" class="btn btn-alt js-reset">Reset</button>
+                                    <button type="button" class="btn btn-alt js-reset">Back</button>
 
-                                    <button type="submit" class="btn">Continue</button>
+                                    <button type="submit" class="btn">Next</button>
                                 </div>
                             </div>
                         </form>
@@ -244,9 +252,9 @@
                                 </div>
 
                                 <div class="buttons">
-                                    <button type="button" class="btn btn-alt js-reset">Reset</button>
+                                    <button type="button" class="btn btn-alt js-reset">Back</button>
 
-                                    <button type="submit" class="btn">Continue</button>
+                                    <button type="submit" class="btn">Next</button>
                                 </div>
                             </div>
                         </form>
@@ -266,7 +274,7 @@
                                     <p class="wait">But Wait...</p>
                                 </div>
                                 <div class="buttons">
-                                    <button type="button" class="btn btn-alt js-reset">Reset</button>
+                                    <button type="button" class="btn btn-alt js-reset">Back</button>
 
                                     <button type="submit" class="btn">One The Last Step</button>
                                 </div>
@@ -302,7 +310,7 @@
                                 </div>
 
                                 <div class="buttons">
-                                    <button type="button" class="btn btn-alt js-reset">Reset</button>
+                                    <button type="button" class="btn btn-alt js-reset">Back</button>
                                     <button type="submit" class="btn">Submit</button>
                                 </div>
                             </div>
@@ -319,7 +327,7 @@
             <img src="./images/design-4.png" alt="design">
         </div>
         <section>
-            <div class="wall-frame">
+            <div class="wall-frame" id="wall-frame">
                 <div class="frame-title">
                     <h3>Wall Of Frame</h3>
                     <p>Our "Wall of Fame" celebrates and honors healthcare professionals who have
