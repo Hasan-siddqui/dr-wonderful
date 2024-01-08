@@ -1,0 +1,1012 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing:border-box;
+    box-sizing: border-box;
+}
+#menuToggle
+{
+  display: block;
+  position: relative;
+  top: 50px;
+  left: 50px;
+  
+  z-index: 1;
+  
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle a
+{
+  text-decoration: none;
+  color: #232323;
+  
+  transition: color 0.3s ease;
+}
+
+#menuToggle a:hover
+{
+  color: tomato;
+}
+
+
+#menuToggle input
+{
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  
+  cursor: pointer;
+  
+  opacity: 0; /* hide this */
+  z-index: 2; /* and place it over the hamburger */
+  
+  -webkit-touch-callout: none;
+}
+
+/*
+ * Just a quick hamburger
+ */
+#menuToggle span
+{
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  
+  background: #cdcdcd;
+  border-radius: 3px;
+  
+  z-index: 1;
+  
+  transform-origin: 4px 0px;
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+#menuToggle span:first-child
+{
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
+}
+
+/* 
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+#menuToggle input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #232323;
+}
+
+/*
+ * But let's hide the middle one.
+ */
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/*
+ * Ohyeah and the last one should go the other direction
+ */
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+/*
+ * Make this absolute positioned
+ * at the top left of the screen
+ */
+#menu
+{
+  position: absolute;
+  width: 300px;
+  margin: -100px 0 0 -50px;
+  padding: 50px;
+  padding-top: 125px;
+  background: #ededed;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */
+  
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#menu li
+{
+  padding: 10px 0;
+  font-size: 22px;
+}
+
+/*
+ * And let's slide it in from the left
+ */
+#menuToggle input:checked ~ ul
+{
+  transform: none;
+}
+
+
+
+
+
+
+.nav {
+    width: 100%;
+    background-color: #1A237E;
+    display: flex;
+    align-items: center;
+  }
+  .nav > .nav-header {
+    flex: 0.95;
+    padding-left: 1rem;
+  }
+  .nav > .nav-header > .nav-title {
+    font-size: 22px;
+    color: #fff;
+  }
+  .nav > .nav-list {
+    display: flex;
+    gap: 2rem;
+    margin-top: 22px;
+  }
+  .nav > .nav-list > li {
+    list-style-type: none;
+  }
+  .nav > .nav-list > li a {
+    text-decoration: none;
+    color: #efefef;
+    cursor: pointer;
+  }
+  .nav > #nav-check {
+      display: none;
+  }
+  @media (max-width: 480px) {
+    .nav {
+      padding: 1rem;
+      flex-wrap: unset;
+    }
+    .nav > .nav-btn {
+      display: inline-block;
+      position: absolute;
+      right: 40px;
+      top: 11px;
+      padding-top: 0.2rem;
+    }
+    .nav > .nav-btn > label {
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      padding: 13px;
+    }
+    .nav > .nav-btn > label > span {
+      display: block;
+      width: 25px;
+      height: 10px;
+      border-top: 2px solid #eee;
+    }
+    .nav > .nav-list {
+    /* position: absolute; */
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    width: 100%;
+    background-color: #1A237E;
+    height: 0;
+    transition: all 0.3s ease-in;
+    top: 40px;
+    left: 0;
+    overflow: hidden;
+    }
+    .nav > .nav-list > li {
+      width: 212px;
+      margin-top: 1.5rem;
+    }
+    .nav > #nav-check:checked ~ .nav-list {
+      height: calc(250px - 50px);
+    }
+  }
+.c3-logo{
+    width: 142px;
+    margin: 4px 0px 4px 0px;
+}
+.header-join{
+    background-color: rgb(248, 181, 24);
+    height: 41px;
+    padding: 9px 0px 0px 14px;
+    margin-top: -10px;
+    width: 187px;
+    border-radius: 24px;
+    color: #fff;
+}
+.carousel-inner .imgOverlay{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(23 55 119 / 32%);
+    /* background-image: linear-gradient(to bottom, rgba(41, 37, 98, 0.37), rgb(41, 37, 98)); */
+}
+
+.banner{
+    width: 100%;
+}
+.banner img{
+    width: 100%;
+}
+.main_container{
+    width: 100%;
+}
+.main_container img{
+    width: 6%;
+    float: right;
+}
+.banner-text{
+    width: 80%;
+    margin: 0 auto;
+}
+.pra-text {
+    width: 60%;
+    float: left;
+}
+.pra-text h2 {
+    font-size: 38px;
+    letter-spacing: 2px;
+    margin: 22px 0;
+    color: #fb7633;
+    font-weight: bold;
+}
+.pra-text p{
+    color: #929292;
+    line-height: 26px;
+    font-size: 18px;
+}
+.text-space{
+    margin-top: 4%;
+}
+.certificate img {
+    width: 35%;
+    margin-top: 88px;
+}
+.img-row {
+    top: -29%;
+    right: 221px;
+    max-width: 80%;
+    width: 70%;
+}
+.doctor{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+.design-sec{
+    width: 30%;
+}
+.design-sec img{
+    width: 68%;
+}
+.doctor-icon{
+    width: 30%;
+}
+.doctor-icon img{
+    width: 55%;
+}
+.design-third{
+    width: 30%;
+}
+.design-third img{
+    width: 20%;
+}
+.doc-icon {
+    width: 26% !important;
+}
+.campaign {
+    width: 50%;
+    position: relative;
+    margin-top: 100px;
+}
+.campaign h2 {
+    font-size: 38px;
+    letter-spacing: 1px;
+    width: 60%;
+    color: #fb7835;
+    font-weight: 600;
+    margin: 0 auto;
+}
+.campaign p {
+    font-size: 18px;
+    text-align: center;
+    margin: 18px 84px 18px 0;
+    font-weight: 600;
+    color: #6b6b6b;
+}
+
+/* Form strt */
+.certificate-sec h2 {
+    margin: 0;
+    margin-bottom: 2rem;
+    text-align: center;
+    font-weight: normal;
+    line-height: 2.2rem;
+}
+.certificate-sec {
+    max-width: 738px;
+    margin: 5vh auto 0 auto;
+    background: white;
+    box-shadow: 2px 8px 25px #00000029;
+    padding-top: 26px;
+    /* box-shadow: 0 1px 2px rgba(0, 0, 0, .3); */
+}
+/* .section:before {
+    content: "";
+    width: 100%;
+    height: 170px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    border-bottom: 1px solid rgba(0, 0, 0, .2);
+} */
+.form-instructions {
+    text-align: center;
+    line-height: 26px;
+}
+form {
+    margin: 2rem auto;
+    width: 100%;
+    will-change: transform;
+}
+.fieldgroup {
+    position: relative;
+}
+label {
+    position: relative;
+    top: 0.8rem;
+    left: 30px;
+    display: block;
+    font-size: 1rem;
+    transition: 0.2s ease-out;
+    will-change: top, font-size;
+}
+.fieldgroup label{
+    top: -2.2rem;
+    left: 0;
+}
+.prom-check-box label{
+    top: -1.02rem;
+    line-height: 18px;
+}
+label:hover {
+    cursor: text;
+}
+input {
+    border: 1px solid #fff;
+    font-size: 1.2rem;
+    padding: 0.6rem;
+    padding-left: 0;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid #34383b8f;
+    transition: 0.2s;
+    width: calc(100% - .6rem);
+    border-radius: 0;
+}
+.prom-check-box {
+    line-height: 12px;
+}
+.prom-check-box input{
+max-width: 20px;
+}
+input:focus {
+    outline: none;
+}
+input:valid {
+    border-color: #444;
+}
+input:focus + label, input.hasInput + label {
+    top: -1.4rem;
+    font-size: 0.7rem;
+}
+.buttons .btn {
+    color: #fff;
+    background-color: #8aad48;
+    padding: 0.8rem;
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+    border-radius: 5px;
+    border: 2px solid transparent;
+    min-width: 45px !important;
+}
+.buttons .btn:hover, .btn.hover {
+    color: #fff;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, .3);
+    transition: 0.2s;
+}
+.buttons .btn:active, .btn.active {
+    color: #fff;
+    background-color: #8aad48;
+    box-shadow: inset 0 2px 10px rgba(0, 0, 0, .3);
+    outline: 2px solid #8aad48;
+}
+.buttons .btn:focus, .btn.focus {
+    color: #fff;
+    outline: 2px solid #8aad48;
+    outline-offset: 2px;
+}
+.buttons .btn:active:focus, .btn.active.focus {
+    outline: 4px solid #8aad48;
+}
+.buttons .btn.hover, .btn.active {
+    outline: none;
+}
+.buttons .btn-alt {
+    background-color: transparent;
+    color: #8aad48;
+    border: 2px solid #8aad48;
+}
+.buttons .btn-alt:hover, .btn-alt.hover {
+    background-color: transparent;
+    color: #010a06;
+    border-color: #010a06;
+    text-shadow: none;
+}
+.buttons .btn-alt:focus, .btn-alt.focus {
+    color: #8aad48;
+}
+.buttons .btn-alt:active, .btn-alt.active {
+    color: #fff;
+    background-color: #8aad48;
+    text-shadow: 0 -1px 0 rgba(255, 255, 255, .2);
+}
+.buttons .btn-alt.hover, .btn-alt.active {
+    outline: none;
+}
+.buttons {
+    display: flex;
+}
+form .btn {
+    display: inline-block;
+    width: 100%;
+    max-width: 220px;
+    margin: 4rem auto 0 auto;
+}
+[data-step="4"] button.btn {
+    display: block;
+    margin: 0 auto;
+}
+.form-progress {
+    position: relative;
+    display: block;
+    margin: 3rem auto;
+    width: 100%;
+    max-width: 598px;
+}
+progress {
+    display: block;
+    position: relative;
+    top: 2px;
+    left: 5px;
+    -webkit-appearance: none;
+    appearance: none;
+    background: #8aad48;
+    width: 100%;
+    height: 5px;
+    background: none;
+    transition: 1s;
+    will-change: contents;
+}
+progress::-webkit-progress-bar {
+    background-color: #ddd;
+}
+progress::-webkit-progress-value {
+    background-color: #8aad48;
+    transition: all 0.5s ease-in-out;
+}
+.form-progress-indicator {
+    position: absolute;
+    top: -6px;
+    left: 0;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: white;
+    border: 3px solid #ddd;
+    border-radius: 50%;
+    transition: all 0.2s ease-in-out;
+    transition-delay: 0.3s;
+    will-change: transform;
+}
+.form-progress-indicator.one {
+    left: 0;
+}
+.form-progress-indicator.two {
+    left: 33%;
+}
+.form-progress-indicator.three {
+    left: 66%;
+}
+.form-progress-indicator.four {
+    left: 100%;
+}
+.form-progress-indicator.active {
+    animation: bounce 0.5s forwards;
+    animation-delay: 0.5s;
+    border-color: #8aad48;
+}
+.animation-container {
+    position: relative;
+    width: 100%;
+    transition: 0.3s;
+    /* will-change: padding; */
+    overflow: hidden;
+}
+.form-step {
+    transition: 1s ease-in-out;
+    transition-timing-function: ease-in-out;
+    will-change: transform, opacity;
+}
+.form-step.leaving {
+    animation: left-and-out 0.5s forwards;
+}
+.form-step.waiting {
+    transform: translateX(400px);
+}
+.form-step.coming {
+    animation: right-and-in 0.5s forwards;
+}
+.logo-wonderful {
+    display: flex;
+    justify-content: space-around;
+}
+
+.logo-wonderful img {
+    width: 112px;
+    margin-top: 20px;
+}
+.prom-check-box h3 {
+    text-align: center;
+    margin-bottom: 38px;
+}
+#Designation {
+    height: 34px;
+    float: right;
+}
+.desg-sel{
+    top: -2rem;
+    left: 0rem;
+    font-size: 18px;
+    color: #000;
+    margin-top: 36px;
+}
+.certificate-download h2 {
+    text-align: center;
+}
+.certificate-download p {
+    margin-top: 28px;
+    line-height: 20px;
+}
+.share-doc {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.share-icon {
+    width: 35%;
+    float: left;
+}
+.share-icon img{
+    width: 100%;
+}
+.share-text {
+    width: 64%;
+    float: right;
+}
+.share-text p {
+    line-height: 20px;
+}
+.frm-container {
+    width: 598px !important;
+    margin: 0 auto;
+    margin-top: 42px;
+}
+.logo-wonderful img {
+    width: 82px;
+}
+.logo {
+    width: 50%;
+    float: left;
+}
+.design-for {
+    width: 100%;
+    display: flex;
+}
+@keyframes left-and-out {
+    100% {
+        opacity: 0;
+        transform: translateX(-400px);
+   }
+}
+@keyframes right-and-in {
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+   }
+}
+@keyframes bounce {
+    50% {
+        transform: scale(1);
+   }
+    100% {
+        transform: scale(1);
+   }
+}
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+.hidden {
+    display: none;
+}
+/* Form End */
+/* wall frame */
+.main-title{
+    color: #2d2d2d;
+    text-align: center;
+    text-transform: capitalize;
+    padding: 0.7em 0;
+  }
+  .frame-title {
+    width: 80%;
+    margin: 0 auto;
+}
+.frame-title h3 {
+    font-size: 38px;
+    margin: 22px 0;
+    color: #fb7633;
+    font-weight: 600;
+    padding-top: 32px;
+}
+.frame-title p {
+    color: #fff;
+}
+  
+  .container-img{
+    padding: 1em 0;
+    float: left;
+    width: 50%;
+  }
+  img.content-image {
+    width: 180px;
+    border-radius: 50%;
+    height: 164px;
+}
+.img-frame {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 10% 0 10%;
+}
+.wall-frame {
+    background-color: #474747;
+}
+  @media screen and (max-width: 640px){
+    .container-img{
+      display: block;
+      width: 100%;
+    }
+  }
+  
+  @media screen and (min-width: 900px){
+    .container-img{
+        width: 24.3333%;
+        margin: 0 auto;
+    }
+  }
+  
+  .container-img .title{
+    color: #1a1a1a;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  .content {
+    position: relative;
+    width: 90%;
+    max-width: 180px;
+    margin: auto;
+    overflow: hidden;
+  }
+  
+  .content .content-overlay {
+    background: rgba(0,0,0,0.7);
+    position: absolute;
+    height: 164px;
+    width: 180px;
+    left: 0;
+    top: 0;
+    border-radius: 50%;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    -webkit-transition: all 0.4s ease-in-out 0s;
+    -moz-transition: all 0.4s ease-in-out 0s;
+    transition: all 0.4s ease-in-out 0s;
+  }
+  
+  .content:hover .content-overlay{
+    opacity: 1;
+  }
+  
+  .content-image{
+    width: 100%;
+  }
+  
+  .content-details {
+    position: absolute;
+    text-align: center;
+    padding-left: 1em;
+    padding-right: 1em;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+  }
+  
+  .content:hover .content-details{
+    top: 50%;
+    left: 50%;
+    opacity: 1;
+  }
+  
+  .content-details h3{
+    color: #fff;
+    font-weight: 500;
+    letter-spacing: 0.15em;
+    margin-bottom: 0.5em;
+    text-transform: uppercase;
+  }
+  
+  .content-details p{
+    color: #fff;
+    font-size: 0.8em;
+  }
+  
+  .fadeIn-bottom{
+    top: 80%;
+  }
+  /* footer */
+  .footer-distributed{
+    width: 100%;
+    padding: 50px 50px 50px 50px;
+  }
+  .multi-logo {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+.c-3logo img {
+    width: 54%;
+}
+.msd-logo img{
+    width: 78%;
+}
+.practo-logo img {
+    width: 70%;
+    margin: 8px 15px 0 0;
+}
+.footer-left {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+.footer-right {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: flex-end;
+}
+.contact-dtls {
+    margin-right: 20px;
+}
+.dr-logo img {
+    width: 50%;
+}
+.team-logo img {
+    width: 50%;
+}
+.fa-facebook:before {
+    padding: 7px 10px;
+    background-color: #f6842f;
+    color: #fff;
+    border-radius: 6px;
+}
+.fa-twitter:before {
+    padding: 7px 10px;
+    background-color: #f6842f;
+    color: #fff;
+    border-radius: 6px;
+}
+.fa-linkedin:before {
+    padding: 7px 10px;
+    background-color: #f6842f;
+    color: #fff;
+    border-radius: 6px;
+}
+.fa-instagram:before {
+    padding: 7px 10px;
+    background-color: #f6842f;
+    color: #fff;
+    border-radius: 6px;
+}
+.contact-dtls p {
+    margin-bottom: 4px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #f6842f;
+}
+.footer-icons {
+    margin-top: 10px;
+}
+.yellow-height{
+    width: 100%;
+    height: 15px;
+    background-color: #f6842f;
+}
+@media screen and (max-width:768px){
+    .certificate img {
+        display: none;
+    }
+    .pra-text {
+        width: 100%;
+    }
+    .img-row {
+        top: -19%;
+        right: -5px;
+        max-width: 80%;
+        width: 100%;
+    }
+    .design-sec img {
+        width: 100%;
+    }
+    .design-third img {
+        width: 30%;
+    }
+    .doc-icon {
+        width: 60% !important;
+    }
+    .campaign h2 {
+        width: 66%;
+        margin: unset;
+    }
+    .nav {
+        flex-wrap: unset !important;
+        flex-direction: column;
+        align-items: stretch;
+        margin-bottom: -60px !important;
+      }
+      .nav > .nav-list > li a {
+        margin-left: 30px;
+      }
+      .header-join {
+        padding: 9px 9px 0px 0px;
+        margin-top: -10px;
+        width: 212px;
+        margin-left: 22px;
+    }
+    img.design-frst {
+        width: 35px;
+    }
+    .campaign {
+        width: 90%;
+        margin-top: 142px;
+        margin-left: 36px;
+    }
+    .form-progress {
+        width: 80%;
+        max-width: 598px;
+    }
+    .pra-text p {
+        font-size: 16px;
+    }
+    .certificate-sec {
+        width: 92%;
+    }
+    .desg-sel {
+        top: -1rem;
+        left: 3rem;
+        float: left;
+        width: 100%;
+    }
+    #Designation {
+        float: left;
+        margin-left: 3rem;
+    }    
+    form {
+        width: 90%;
+    }
+    .fieldgroup input#firstName {
+        margin-top: 22px;
+    }
+    .frm-container {
+        width: 100% !important;
+        margin: 0 auto;
+    }
+    .buttons {
+        display: flex;
+        flex-direction: column;
+    }
+    form .btn {
+        max-width: 169px;
+        margin: 0 auto;
+    }
+    .buttons .btn {
+        margin-top: 28px;
+    }
+    .fieldgroup {
+        margin: 0;
+    }
+    .footer-left {
+        margin-top: 30px;
+    }
+    .dr-logo img {
+        width: 60%;
+        float: left;
+    }
+    .team-logo img {
+        width: 60%;
+    }
+    .footer-right {
+        margin-top: 28px;
+    }
+    #menuToggle {
+        top: -52px;
+        left: 22px;
+    }
+    .nav > .nav-header > .nav-title {
+        float: right;
+    }
+    #menu li {
+        width: 230px;
+        margin: 0 auto;
+    }
+}
+@media only screen and (min-width: 1200px){
+    #menuToggle{
+        display: none;
+    }
+}
