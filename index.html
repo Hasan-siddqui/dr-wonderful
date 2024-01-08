@@ -579,6 +579,30 @@
         crossorigin="anonymous"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="script.js"></script>
+    <script>
+        // Get the "Check All" checkbox and all other checkboxes
+        const checkAllCheckbox = document.getElementById('checkAll');
+        const checkboxes = document.querySelectorAll('.checkbox');
+
+        // Function to check or uncheck all checkboxes based on the "Check All" checkbox state
+        function toggleCheckboxes() {
+            checkboxes.forEach(checkbox => {
+                checkbox.checked = checkAllCheckbox.checked;
+            });
+        }
+
+        // Add a click event listener to the "Check All" checkbox
+        checkAllCheckbox.addEventListener('click', toggleCheckboxes);
+
+        $('.js-input').keyup(function () {
+            if ($(this).val()) {
+                $(this).addClass('not-empty');
+            } else {
+                $(this).removeClass('not-empty');
+            }
+        });
+
+    </script>
 </body>
 
 </html>
