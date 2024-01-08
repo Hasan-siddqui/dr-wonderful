@@ -1014,6 +1014,10 @@ progress::-webkit-progress-value {
     }
     .buttons .btn {
         margin-top: 28px;
+        max-width: 206px !important;
+    }
+    button.btn.btn-alt.upload-btn {
+        max-width: 228px !important;
     }
     .fieldgroup {
         margin: 0;
@@ -1041,6 +1045,34 @@ progress::-webkit-progress-value {
     #menu li {
         width: 230px;
         margin: 0 auto;
+    }
+    .animation-container{
+        width: 84%;
+        margin: 0 auto;
+    }
+    .certificate-sec h2{
+        font-size: 22px;
+        font-weight: 600
+    }
+    .campaign p {
+        margin: 18px 26px 18px 0;
+    }
+    .design-for img {
+        width: 46px;
+    }
+    input#inst-check {
+        width: 78px;
+    }
+    .instuction label {
+        left: 12px;
+    }
+    .prom-check-box label{
+        top: -1.1rem;
+        line-height: 18px;
+    }
+    input#checkAll{
+        position: absolute;
+        top: 242px;
     }
                                                                             
 }
