@@ -402,6 +402,13 @@ label {
     top: -2.2rem;
     left: 0;
 }
+.instuction{
+    width: 100%;
+    display: flex;
+}
+input#inst-check {
+    width: 28px;
+}
 .prom-check-box label{
     top: -0.1rem;
     line-height: 18px;
@@ -1035,6 +1042,7 @@ progress::-webkit-progress-value {
         width: 230px;
         margin: 0 auto;
     }
+                                                                            
 }
 @media only screen and (min-width: 1200px){
     #menuToggle{
