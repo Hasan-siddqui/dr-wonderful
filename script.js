@@ -17,12 +17,8 @@ function formReset() {
 	$('.js-form-step[data-step="1"]').removeClass('hidden');
 	$('.form-progress-indicator').not('.one').removeClass('active');
 	
-	// $animContainer.css({
-	// 	'paddingBottom': $('.js-form-step[data-step="1"]').height() + 'px'
-	// });
-	
-	console.warn('Form reset.');
-	return false;
+	// console.warn('Form reset.');
+	// return false;
 }
 
 /**
@@ -38,7 +34,7 @@ function setupClickHandlers() {
 			showNextForm($currentForm);
 	});
 
-	// Reset form on reset button click
+	// Reset form on back button click
 	$('.js-reset').on('click', function() {
 		formReset();
 	});
@@ -70,11 +66,7 @@ function showNextForm($currentForm) {
 	setTimeout(function() {
 		$currentForm.addClass('hidden');
 	}, 500);
-	
-	// Animate container to height of form
-	// $animContainer.css({
-	// 	'paddingBottom' : $nextForm.height() + 'px'
-	// });  
+
 
 	// Show next form fields
 	$nextForm.removeClass('hidden')
@@ -152,4 +144,5 @@ function init() {
 }
 
 init();
+
 

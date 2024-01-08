@@ -52,6 +52,11 @@
                 </a>
             </ul>
         </div>
+        <!-- <div class="supporter">
+            <p>Campaign supported by </p>
+            <img src="./images/msd-logo.png" alt="">
+            <img src="./images/practo-logo.png" alt="">
+        </div> -->
         <ul class="nav-list">
             <li><a href="#about">ABOUT</a></li>
             <li><a href="#wall-frame">WALL OF FRAME</a></li>
@@ -138,10 +143,14 @@
                     <progress class="form-progress-bar" min="0" max="100" value="0" step="33"
                         aria-labelledby="form-progress-completion"></progress>
 
-                    <div class="form-progress-indicator one active"><label class="prog-cneter" for="info">Fill info</label></div>
-                    <div class="form-progress-indicator two"><label class="prog-cneter" for="pledge">Take The Pledge</label></div>
-                    <div class="form-progress-indicator three"><label class="prog-cneter" for="certificate">Get your Certificate</label></div>
-                    <div class="form-progress-indicator four"><label class="prog-cneter" for="featured">Get featured</label></div>
+                    <div class="form-progress-indicator one active"><label class="prog-cneter" for="info">Fill
+                            info</label></div>
+                    <div class="form-progress-indicator two"><label class="prog-cneter" for="pledge">Take The
+                            Pledge</label></div>
+                    <div class="form-progress-indicator three"><label class="prog-cneter" for="certificate">Get your
+                            Certificate</label></div>
+                    <div class="form-progress-indicator four"><label class="prog-cneter" for="featured">Get
+                            featured</label></div>
 
                     <p id="form-progress-completion" class="js-form-progress-completion sr-only" aria-live="polite">0%
                         complete
@@ -172,32 +181,32 @@
                                 </select> -->
 
                                 <div class="fieldgroup">
-                                    <input type="text" name="firstName" id="firstName" required />
-                                    <label for="firstName">Your Name*</label>
+                                    <input type="text" name="firstName" placeholder="Your Name*" id="firstName" required />
+                                    <label for="firstName"></label>
                                 </div>
 
                                 <div class="fieldgroup">
-                                    <input type="text" name="organisation" id="organisation" required />
-                                    <label for="lastName">Your Organisation*</label>
+                                    <input type="text" name="organisation" placeholder="Your Organisation*" id="organisation" required />
+                                    <label for="lastName"></label>
                                 </div>
                                 <div class="form-row">
                                     <div class="fieldgroup col-md-6">
-                                        <input type="text" name="City" id="City" required />
-                                      <label for="City">City*</label>
+                                        <input type="text" name="City" placeholder="City*" id="City" required />
+                                        <label for="City"></label>
                                     </div>
                                     <div class="fieldgroup col-md-6">
-                                        <input type="pinCode" name="pinCode" id="pinCode" required />
-                                      <label for="pinCode">Pin Code*</label>
+                                        <input type="pinCode" name="pinCode" placeholder="Pin Code*" id="pinCode" required />
+                                        <label for="pinCode"></label>
                                     </div>
-                                  </div>
+                                </div>
                                 <div class="fieldgroup">
-                                    <input type="text" name="number" id="number" required />
-                                    <label for="number">Phone Number*</label>
+                                    <input type="text" name="number" placeholder="Phone Number*" id="number" required />
+                                    <label for="number"></label>
                                 </div>
 
                                 <div class="fieldgroup">
-                                    <input type="text" name="email" id="email" required />
-                                    <label for="email">Email*</label>
+                                    <input type="text" name="email" placeholder="Email*" id="email" required />
+                                    <label for="email"></label>
                                 </div>
                                 <div class="buttons">
                                     <button type="button" class="btn btn-alt js-reset">Back</button>
@@ -218,7 +227,8 @@
                             <div class="frm-container">
                                 <div class="prom-check-box">
                                     <h3>My Promises to My Patients</h3>
-                                    <p>I am dedicated to providing my patients with the utmost care and support during their birthing journey. It is my commitment to:</p>
+                                    <p>I am dedicated to providing my patients with the utmost care and support during
+                                        their birthing journey. It is my commitment to:</p>
                                     <input type="checkbox" id="checkAll" name="fav_language">
                                     <label for="check-all"><b style="color: #000;">Check All</b></label> <br>
                                     <input type="checkbox" class="checkbox" id="#" name="fav_language" value="points">
@@ -247,7 +257,7 @@
                                 </div>
 
                                 <div class="buttons">
-                                    <button type="button" class="btn btn-alt js-reset">Back</button>
+                                    <button onclick="goBack()" type="button" class="btn btn-alt js-reset">Back</button>
 
                                     <button type="submit" class="btn">Next</button>
                                 </div>
@@ -269,7 +279,7 @@
                                     <p class="wait">But Wait...</p>
                                 </div>
                                 <div class="buttons">
-                                    <button type="button" class="btn btn-alt js-reset">Back</button>
+                                    <button onclick="goBack()" type="button" class="btn btn-alt js-reset">Back</button>
 
                                     <button type="submit" class="btn">One The Last Step</button>
                                 </div>
@@ -530,9 +540,10 @@
 
         <footer class="footer-distributed">
             <div class="multi-logo">
-                <div class="c-3logo">
+                <p>Campaign supported by:</p>
+                <!-- <div class="c-3logo">
                     <img src="./images/c3-logo.png" alt="c3-logo">
-                </div>
+                </div> -->
                 <div class="msd-logo">
                     <img src="./images/msd-logo.png" alt="msd-logo">
                 </div>

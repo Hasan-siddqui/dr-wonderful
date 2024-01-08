@@ -7,6 +7,13 @@
     -moz-box-sizing:border-box;
     box-sizing: border-box;
 }
+/* .supporter {
+    display: flex;
+    align-items: center;
+}
+.supporter p {
+    color: #fff;
+} */
 #menuToggle
 {
   display: block;
@@ -380,6 +387,7 @@ form {
 }
 .fieldgroup {
     position: relative;
+    padding: 20px 0;
 }
 label {
     position: relative;
@@ -439,7 +447,7 @@ input:valid {
     font-size: 0.7rem;
 }
 .buttons .upload-btn {
-    padding: 0.8rem 2px 11px 5px;
+    padding: 0.8rem 2px 11px 5px !important;
 }
 .buttons .btn {
     color: #fff;
@@ -834,6 +842,12 @@ progress::-webkit-progress-value {
     width: 100%;
     display: flex;
     justify-content: flex-end;
+}
+.multi-logo p {
+    font-size: 18px;
+    margin: 10px 0 0;
+    color: #474747;
+    font-weight: 600;
 }
 .c-3logo img {
     width: 54%;
