@@ -155,11 +155,6 @@
   transform: none;
 }
 
-
-
-
-
-
 .nav {
     width: 100%;
     background-color: #1A237E;
@@ -168,7 +163,7 @@
   }
   .nav > .nav-header {
     flex: 0.95;
-    padding-left: 1rem;
+    padding-left: 4rem;
   }
   .nav > .nav-header > .nav-title {
     font-size: 22px;
@@ -401,6 +396,9 @@ label {
 .fieldgroup label{
     top: -2.2rem;
     left: 0;
+}
+.fieldgroup p {
+    color: #939393;
 }
 .instuction{
     width: 100%;
@@ -827,8 +825,6 @@ progress::-webkit-progress-value {
   .content-details h3{
     color: #fff;
     font-weight: 500;
-    letter-spacing: 0.15em;
-    margin-bottom: 0.5em;
     text-transform: uppercase;
   }
   
@@ -934,7 +930,7 @@ progress::-webkit-progress-value {
     }
     .img-row {
         top: -14%;
-        right: -9px;
+        right: -2px;
         max-width: 80%;
         width: 100%;
     }

@@ -214,7 +214,8 @@
                                 </div>
                                 <div class="instuction">
                                     <input type="checkbox" id="inst-check" name="fav_language" value="points">
-                                    <label for="inst-check">I confirm that I am a certified doctor and acknowledge that providing
+                                    <label for="inst-check">I confirm that I am a certified doctor and acknowledge that
+                                        providing
                                         false information could result in legal actions.
                                     </label>
                                 </div>
@@ -241,28 +242,41 @@
                                         their birthing journey. It is my commitment to:</p>
                                     <input type="checkbox" id="checkAll" name="fav_language">
                                     <label for="checkAll"><b style="color: #000;">Check All</b></label> <br>
-                                    <input type="checkbox" class="checkbox" id="prioritize" name="fav_language" value="points">
+                                    <input type="checkbox" class="checkbox" id="prioritize" name="fav_language"
+                                        value="points">
                                     <label for="prioritize">Prioritize your physical, emotional, and psychological
                                         well-being.</label><br>
-                                    <input type="checkbox" class="checkbox" id="kindness" name="fav_language" value="points">
+                                    <input type="checkbox" class="checkbox" id="kindness" name="fav_language"
+                                        value="points">
                                     <label for="kindness">Treat you with kindness and respect.</label><br>
-                                    <input type="checkbox" class="checkbox" id="choices" name="fav_language" value="points">
+                                    <input type="checkbox" class="checkbox" id="choices" name="fav_language"
+                                        value="points">
                                     <label for="choices">Support your choices and needs with compassion.</label><br>
-                                    <input type="checkbox" class="checkbox" id="privacy" name="fav_language" value="points">
+                                    <input type="checkbox" class="checkbox" id="privacy" name="fav_language"
+                                        value="points">
                                     <label for="privacy">Safeguard your privacy and confidentiality at all
                                         times.</label><br>
-                                    <input type="checkbox" class="checkbox" id="information" name="fav_language" value="points">
+                                    <input type="checkbox" class="checkbox" id="information" name="fav_language"
+                                        value="points">
                                     <label for="information">Explain medical information clearly and gently.</label><br>
-                                    <input type="checkbox" class="checkbox" id="judgment" name="fav_language" value="points">
-                                    <label for="judgment">Embrace you, free from judgment, bias, and prejudice.</label><br>
-                                    <input type="checkbox" class="checkbox" id="comfort" name="fav_language" value="points">
+                                    <input type="checkbox" class="checkbox" id="judgment" name="fav_language"
+                                        value="points">
+                                    <label for="judgment">Embrace you, free from judgment, bias, and
+                                        prejudice.</label><br>
+                                    <input type="checkbox" class="checkbox" id="comfort" name="fav_language"
+                                        value="points">
                                     <label for="comfort">Ensure your comfort and ease during every visit</label><br>
-                                    <input type="checkbox" class="checkbox" id="support" name="fav_language" value="points">
+                                    <input type="checkbox" class="checkbox" id="support" name="fav_language"
+                                        value="points">
                                     <label for="support">Support you in making well-informed decisions.</label><br>
-                                    <input type="checkbox" class="checkbox" id="trust" name="fav_language" value="points">
-                                    <label for="trust">Foster your sense of security and trust with our care.</label><br>
-                                    <input type="checkbox" class="checkbox" id="empathetically" name="fav_language" value="points">
-                                    <label for="empathetically">Listen to you attentively and empathetically.</label><br>
+                                    <input type="checkbox" class="checkbox" id="trust" name="fav_language"
+                                        value="points">
+                                    <label for="trust">Foster your sense of security and trust with our
+                                        care.</label><br>
+                                    <input type="checkbox" class="checkbox" id="empathetically" name="fav_language"
+                                        value="points">
+                                    <label for="empathetically">Listen to you attentively and
+                                        empathetically.</label><br>
 
                                 </div>
 
@@ -351,7 +365,7 @@
                         make on maternal healthcare.</p>
                 </div>
                 <div class="img-frame">
-                    <div class="container-img">
+                    <div class="slider container-img">
                         <div class="content">
                             <a href="javascript:void(0)" target="_blank">
                                 <div class="content-overlay"></div>
@@ -596,6 +610,17 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="script.js"></script>
     <script>
+        // slider script
+        $('.slider').slick({
+            slidesToShow: 3, // Number of slides to show at once
+            slidesToScroll: 1, // Number of slides to scroll
+            prevArrow: '<button class="slick-prev">Previous</button>', // Custom previous arrow
+            nextArrow: '<button class="slick-next">Next</button>', // Custom next arrow
+            // Other settings as needed
+        });
+
+
+
         // Get the "Check All" checkbox and all other checkboxes
         const checkAllCheckbox = document.getElementById('checkAll');
         const checkboxes = document.querySelectorAll('.checkbox');
@@ -617,6 +642,8 @@
                 $(this).removeClass('not-empty');
             }
         });
+
+
 
     </script>
 </body>
