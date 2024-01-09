@@ -352,7 +352,7 @@
 
 /* Form strt */
 .certificate-sec h2 {
-    margin: 10% 0 0 0;
+    margin: 4% 0 0 0;
     text-align: center;
     font-weight: normal;
     line-height: 2.2rem;
@@ -1033,7 +1033,7 @@ progress::-webkit-progress-value {
         width: 60%;
     }
     .footer-right {
-        margin-top: 28px;
+        margin-top: 38px;
     }
     #menuToggle {
         top: -52px;
@@ -1065,6 +1065,7 @@ progress::-webkit-progress-value {
     }
     .instuction label {
         left: 12px;
+        font-size: 15px;
     }
     .prom-check-box label{
         top: -1.1rem;
@@ -1076,6 +1077,25 @@ progress::-webkit-progress-value {
     }
     label.prog-cneter {
         left: -35px;
+    }
+    .fieldgroup p {
+        font-size: 12px;
+    }
+    .contact-dtls {
+        margin-right: -18px;
+    }
+    .multi-logo p{
+        margin: -12px 0 0;
+    }
+    .msd-logo img {
+        width: 94%;
+    }
+    .practo-logo img {
+        width: 79%;
+        margin: 3px 0px 0 0;
+    }
+    .footer-distributed {
+        padding: 80px 50px 80px 50px;
     }
                                                                             
 }
