@@ -7,13 +7,25 @@
     -moz-box-sizing:border-box;
     box-sizing: border-box;
 }
-/* .supporter {
+.supporter {
+    width: 100%;
     display: flex;
     align-items: center;
+    justify-content: flex-end;
+    margin-right: 3%;
+
+}
+.supporter img {
+    width: 78px;
+    padding: 0 20px 8px 0px;
 }
 .supporter p {
-    color: #fff;
-} */
+    margin: 0 14px 6px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #26255f;
+    text-transform: uppercase;
+}
 #menuToggle
 {
   display: block;
@@ -157,7 +169,8 @@
 
 .nav {
     width: 100%;
-    background-color: #1A237E;
+    /* background-color: #1A237E; */
+    background-color: #ffffff;
     display: flex;
     align-items: center;
   }
@@ -179,8 +192,9 @@
   }
   .nav > .nav-list > li a {
     text-decoration: none;
-    color: #efefef;
+    color: #26255f;;
     cursor: pointer;
+    font-weight: 600;
   }
   .nav > #nav-check {
       display: none;
@@ -262,7 +276,7 @@
     width: 100%;
 }
 .main_container img{
-    width: 6%;
+    width: 8%;
     float: right;
 }
 .banner-text{
@@ -274,6 +288,7 @@
     float: left;
 }
 .pra-text h2 {
+    /* font-family: "Mitra LT Bold"; */
     font-size: 38px;
     letter-spacing: 2px;
     margin: 22px 0;
@@ -304,7 +319,7 @@
     justify-content: flex-end;
 }
 .design-sec{
-    width: 30%;
+    width: 33%;
 }
 .design-sec img{
     width: 68%;
@@ -319,7 +334,7 @@
     width: 30%;
 }
 .design-third img{
-    width: 20%;
+    width: 23%;
 }
 .doc-icon {
     width: 24% !important;
@@ -371,12 +386,30 @@
     border-bottom: 1px solid rgba(0, 0, 0, .2);
 } */
 .form-instructions {
-    text-align: center;
     line-height: 26px;
-    margin-top: 66px;
+    margin: 66px 0 0px 0;
+    font-size: 28px;
+    color: #fb7633;
+    text-align: center;
+}
+.coming .form-instructions {
+    font-size: 28px;
+    text-align: left;
+    margin-left: 66px;
+}
+.certificate-heading h2{
+    font-size: 28px;
+    text-align: left !important;
+    color: #ff7a3c;
+    margin: 66px 0 0px 0;
+}
+p.form-instructions-1 {
+    text-align: center;
+    font-size: 28px;
+    color: #fb7633;
 }
 form {
-    margin: 2rem auto;
+    margin: 1rem 0 2rem 0;
     width: 100%;
     will-change: transform;
 }
@@ -416,7 +449,6 @@ input#inst-check {
     width: 100%;
     font-size: 17px;
     line-height: 28px;
-    text-align: center;
     margin-bottom: 38px;
 
 }
@@ -452,9 +484,13 @@ input:valid {
     font-size: 0.7rem;
 }
 .buttons .upload-btn {
-    padding: 0.8rem 2px 11px 5px !important;
+    padding: 5px 0px 5px 1px !important;
+    background-color: #ff783b;
+    border-radius: 28px;
+    color: #ffff;
+    width: 158px;
 }
-.buttons .btn {
+/* .buttons .btn {
     color: #fff;
     background-color: #8aad48;
     padding: 0.8rem;
@@ -507,10 +543,48 @@ input:valid {
 }
 .buttons .btn-alt.hover, .btn-alt.active {
     outline: none;
-}
+} */
 .buttons {
     display: flex;
+    justify-content: space-between;
+    margin-top: 28px;
+
 }
+button.next-btn {
+    float: right;
+    border: unset;
+    background-color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+}
+.next-btn :hover{
+    border: 2px solid green;
+}
+button.back-btn {
+    border: unset;
+    background-color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+}
+button.next-btn i {
+    font-size: 17px;
+    width: 28px;
+    background-color: orange;
+    border-radius: 50px;
+    height: 28px;
+    padding: 5px 0 2px 0;
+    color: #fff;
+    margin-left: 8px;
+}
+.img-supported {
+    text-align: center;
+    margin-top: 14px;
+    font-size: 13px;
+}
+.img-supported p {
+    margin: 0;
+}
+
 form .btn {
     display: inline-block;
     width: 100%;
@@ -528,14 +602,14 @@ form .btn {
     width: 100%;
     max-width: 598px;
 }
-label.prog-cneter {
+/* label.prog-cneter {
     position: absolute;
     left: -16px;
     top: 29px;
     font-weight: 600;
     font-size: 14px;
     text-align: center;
-}
+} */
 progress {
     display: block;
     position: relative;
@@ -588,6 +662,20 @@ progress::-webkit-progress-value {
     animation-delay: 0.5s;
     border-color: #8aad48;
 }
+.step {
+    width: 80px;
+    margin: 23px 0 0 -36px;
+}
+.step p {
+    margin-bottom: 2px;
+    font-weight: 600;
+    font-size: 14px;
+    text-align: center;
+    color: #9d9d9d;
+}
+.step .desc{
+    color: #575757;
+}
 .animation-container {
     position: relative;
     width: 100%;
@@ -619,8 +707,10 @@ progress::-webkit-progress-value {
     margin-top: 20px;
 }
 .prom-check-box h3 {
-    text-align: center;
-    margin-bottom: 12px;
+    margin: 0 0 6px 0;
+    font-size: 20px;
+    color: #000;
+    font-weight: bolder;
 }
 #Designation {
     height: 34px;
@@ -638,7 +728,12 @@ progress::-webkit-progress-value {
 }
 .certificate-download p {
     margin-top: 28px;
-    line-height: 20px;
+    line-height: 2px;
+}
+p.wait {
+    color: #000;
+    font-weight: 600;
+    margin: 48px 0;
 }
 .share-doc {
     width: 100%;
@@ -650,7 +745,8 @@ progress::-webkit-progress-value {
     float: left;
 }
 .share-icon img{
-    width: 100%;
+    width: 86%;
+    float: left;
 }
 .share-text {
     width: 64%;
@@ -662,15 +758,28 @@ progress::-webkit-progress-value {
 .frm-container {
     width: 598px !important;
     margin: 0 auto;
-    margin-top: 42px;
 }
 .logo {
     width: 50%;
     float: left;
 }
-.design-for {
+.design-section {
     width: 100%;
     display: flex;
+}
+.design-for {
+    width: 50%;
+    display: flex;
+}
+.design-five {
+    width: 50%;
+    float: right;
+}
+.design-for img {
+    width: 14%;
+}
+.design-five img {
+    width: 14%;
 }
 @keyframes left-and-out {
     100% {
@@ -745,7 +854,7 @@ progress::-webkit-progress-value {
     padding: 0 10% 0 10%;
 }
 .wall-frame {
-    background-color: #474747;
+    background-color: #245677;
 }
   @media screen and (max-width: 640px){
     .container-img{
@@ -842,7 +951,7 @@ progress::-webkit-progress-value {
     padding: 50px 50px 50px 50px;
   }
   .multi-logo {
-    width: 100%;
+    width: 50%;
     display: flex;
     justify-content: flex-end;
 }
@@ -870,9 +979,22 @@ progress::-webkit-progress-value {
 .footer-right {
     width: 100%;
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-content: flex-end;
+    flex-flow: column wrap;
+    align-content: flex-start;
+}
+.fotter-dr_logo {
+    width: 50%;
+    float: left;
+    display: flex;
+}
+.fotter-dr_logo img {
+    width: 28%;
+}
+.lineBottom {
+    width: 98%;
+    height: 2px;
+    background-color: #fb863a;
+    margin: 28px 0;
 }
 .contact-dtls {
     margin-right: 20px;
@@ -965,6 +1087,9 @@ progress::-webkit-progress-value {
     img.design-frst {
         width: 35px;
     }
+    .design-five img {
+        width: 25%;
+    }
     .campaign {
         width: 90%;
         margin-top: 142px;
@@ -979,6 +1104,12 @@ progress::-webkit-progress-value {
     }
     .certificate-sec {
         width: 92%;
+    }
+    .coming .form-instructions{
+        margin: 60px 0 0;
+    }
+    .form-instructions{
+        text-align: left;
     }
     .desg-sel {
         top: -1rem;
@@ -1000,9 +1131,13 @@ progress::-webkit-progress-value {
         width: 100% !important;
         margin: 0 auto;
     }
+    .certificate-download p {
+        line-height: 26px;
+    }
     .buttons {
         display: flex;
         flex-direction: column;
+        gap: 18px;
     }
     form .btn {
         max-width: 169px;
@@ -1050,6 +1185,9 @@ progress::-webkit-progress-value {
         font-size: 22px;
         font-weight: 600
     }
+    .step {
+        margin: 23px 0 0 -47px
+    }
     .campaign p {
         margin: 18px 26px 18px 0;
     }
@@ -1058,6 +1196,7 @@ progress::-webkit-progress-value {
     }
     input#inst-check {
         width: 78px;
+        margin-bottom: 40px;
     }
     .instuction label {
         left: 12px;
@@ -1069,17 +1208,28 @@ progress::-webkit-progress-value {
     }
     input#checkAll{
         position: absolute;
-        top: 242px;
+        top: 217px;
     }
-    label.prog-cneter {
+    /* label.prog-cneter {
         left: -35px;
-    }
+    } */
     .fieldgroup p {
         font-size: 12px;
     }
     .contact-dtls {
         margin-right: -18px;
     }
+    .multi-logo{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 70px;
+    }
+    .fotter-dr_logo img {
+        width: 52%;
+    }
+
     .multi-logo p{
         margin: -12px 0 0;
     }
@@ -1089,9 +1239,28 @@ progress::-webkit-progress-value {
     .practo-logo img {
         width: 79%;
         margin: 3px 0px 0 0;
+        float: right;
     }
+    .c-3logo img{
+        float: left;
+    }
+    .lineBottom{
+        width: 100%;
+    } 
     .footer-distributed {
-        padding: 80px 50px 80px 50px;
+        padding: 50px 50px 80px 50px;
+    }
+    .fotter-dr_logo{
+        width: 100%;
+        float: left;
+        display: flex;
+        justify-content: center;
+    }
+    .supporter{
+        display: none;
+    }
+    p.form-instructions-1{
+        text-align: left;
     }
                                                                             
 }
@@ -1100,7 +1269,12 @@ progress::-webkit-progress-value {
         display: none;
     }
 }
-@media only screen and (min-width: 1024px){
+/* @media only screen and (max-width: 1024px){
+    #menuToggle{
+        display: none;
+    }
+} */
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1280px) {
     #menuToggle{
         display: none;
     }
