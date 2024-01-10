@@ -13,7 +13,8 @@
     height: 48px;
     margin-left: 18px;
 }
-.vertical{
+
+.vertical {
     border-left: 2px solid #fb863a;
     height: 22px;
     margin: 0 6px 0 -8px;
@@ -394,7 +395,7 @@
     font-weight: 600;
     margin: 0 auto;
     line-height: 62px;
-    
+
 }
 
 .campaign p {
@@ -768,6 +769,7 @@ progress::-webkit-progress-value {
 .step .desc {
     color: #575757;
 }
+
 p.step-title {
     font-size: 20px;
     font-weight: 500;
@@ -1388,7 +1390,8 @@ img.content-image {
     .step {
         margin: 23px 0 0 -47px
     }
-    p.step-title{
+
+    p.step-title {
         font-size: 18px;
     }
 
@@ -1486,19 +1489,23 @@ img.content-image {
         text-align: center;
         font-size: 22px;
     }
-    .fame-title h3{
+
+    .fame-title h3 {
         font-size: 48px;
         letter-spacing: 0;
     }
+
     .pra-text h2 {
         font-size: 48px;
         line-height: 38px;
         letter-spacing: 2px;
     }
-    .vl{
+
+    .vl {
         margin: 0 18px;
         height: 30px;
     }
+
     .wall-fame {
         width: 100%;
         margin: 0 auto;
@@ -1517,8 +1524,29 @@ img.content-image {
         display: none;
     }
 } */
-@media only screen and (min-device-width: 769px) and (max-device-width: 1280px) {
+@media only screen and (min-device-width: 768px) and (max-device-width: 1280px) {
     #menuToggle {
         display: none;
+    }
+
+    .doc-icon {
+        width: 38% !important;
+    }
+
+    .campaign p {
+        text-align: left;
+    }
+
+    .img-row {
+        top: -18%;
+        right: 34px;
+    }
+    .multi-logo{
+        margin-top: 146px;
+    }
+}
+@media only screen and (min-device-width: 400px) and (max-device-width: 768px){
+    .doc-icon {
+        width: 40% !important;
     }
 }
