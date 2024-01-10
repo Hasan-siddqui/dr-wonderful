@@ -25,6 +25,7 @@
     align-items: center;
     justify-content: flex-end;
     margin-right: 3%;
+    background-color: #f1f2f2;
 
 }
 
@@ -315,12 +316,11 @@
 }
 
 .pra-text h2 {
-    /* font-family: "Mitra LT Bold"; */
-    font-size: 38px;
-    letter-spacing: 2px;
-    margin: 22px 0;
+    font-family: "Mitra LT Bold";
+    font-size: 62px;
+    letter-spacing: 4px;
+    margin: 22px 0 0 0;
     color: #fb7633;
-    font-weight: bold;
 }
 
 .pra-text p {
@@ -386,20 +386,23 @@
 }
 
 .campaign h2 {
-    font-size: 38px;
+    font-family: Mitra LT Bold;
+    font-size: 62px;
     letter-spacing: 1px;
-    width: 60%;
-    color: #fb7835;
+    width: 66%;
+    color: #8aad48;
     font-weight: 600;
     margin: 0 auto;
+    
 }
 
 .campaign p {
-    font-size: 18px;
+    font-size: 22px;
+    letter-spacing: 1px;
     text-align: center;
-    margin: 18px 84px 18px 0;
+    margin: 18px 0px 18px 6px;
     font-weight: 600;
-    color: #6b6b6b;
+    color: rgb(107, 107, 107);
 }
 
 /* Form strt */
@@ -439,7 +442,7 @@
 
 .coming .form-instructions {
     font-size: 28px;
-    text-align: left;
+    text-align: left !important;
     margin-left: 66px;
 }
 
@@ -754,13 +757,17 @@ progress::-webkit-progress-value {
 .step p {
     margin-bottom: 2px;
     font-weight: 600;
-    font-size: 14px;
+    font-size: 13px;
     text-align: center;
     color: #9d9d9d;
 }
 
 .step .desc {
     color: #575757;
+}
+p.step-title {
+    font-size: 20px;
+    font-weight: 500;
 }
 
 .animation-container {
@@ -946,8 +953,10 @@ p.wait {
 }
 
 .frame-title h3 {
-    font-size: 38px;
-    margin: 22px 0;
+    font-family: "Mitra LT Bold";
+    font-size: 62px;
+    letter-spacing: 4px;
+    margin: 0;
     color: #fb7633;
     font-weight: 600;
     padding-top: 32px;
@@ -1272,7 +1281,7 @@ img.content-image {
     }
 
     .form-instructions {
-        text-align: left;
+        text-align: center;
     }
 
     .desg-sel {
@@ -1462,7 +1471,7 @@ img.content-image {
     }
 
     p.form-instructions-1 {
-        text-align: left;
+        text-align: center;
     }
 
 }
