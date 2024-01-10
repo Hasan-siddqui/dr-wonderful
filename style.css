@@ -1201,7 +1201,7 @@ img.content-image {
     background-color: #f6842f;
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:991px) {
     .certificate img {
         display: none;
     }
@@ -1500,7 +1500,7 @@ img.content-image {
         height: 30px;
     }
     .wall-fame {
-        width: 80%;
+        width: 100%;
         margin: 0 auto;
     }
 
