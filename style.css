@@ -418,7 +418,7 @@
     max-width: 738px;
     margin: 5vh auto 0 auto;
     background: white;
-    box-shadow: 2px 8px 25px #00000029;
+    box-shadow: 3px 12px 20px 10px #00000029;
     padding-top: 26px;
     /* box-shadow: 0 1px 2px rgba(0, 0, 0, .3); */
 }
@@ -627,6 +627,7 @@ button.next-btn {
     background-color: #fff;
     font-size: 16px;
     font-weight: 600;
+    cursor: pointer;
 }
 
 /* .next-btn :hover {
@@ -638,6 +639,7 @@ button.back-btn {
     background-color: #fff;
     font-size: 16px;
     font-weight: 600;
+    cursor: pointer;
 }
 
 button.next-btn i {
@@ -1230,6 +1232,9 @@ img.content-image {
     .campaign h2 {
         width: 66%;
         margin: unset;
+        font-size: 48px;
+        letter-spacing: 1px;
+        line-height: 46px;
     }
 
     .nav {
@@ -1383,9 +1388,13 @@ img.content-image {
     .step {
         margin: 23px 0 0 -47px
     }
+    p.step-title{
+        font-size: 18px;
+    }
 
     .campaign p {
-        margin: 18px 26px 18px 0;
+        margin: 18px 26px 0 0;
+        font-size: 18px;
     }
 
     .design-for img {
@@ -1440,17 +1449,18 @@ img.content-image {
     }
 
     .msd-logo img {
-        width: 94%;
+        width: 100%;
     }
 
     .practo-logo img {
-        width: 79%;
+        width: 96%;
         margin: 3px 0px 0 0;
         float: right;
     }
 
     .c-3logo img {
         float: left;
+        width: 100%;
     }
 
     .lineBottom {
@@ -1485,6 +1495,10 @@ img.content-image {
         line-height: 38px;
         letter-spacing: 2px;
     }
+    .vl{
+        margin: 0 18px;
+        height: 30px;
+    }
 
 }
 
@@ -1499,7 +1513,7 @@ img.content-image {
         display: none;
     }
 } */
-@media only screen and (min-device-width: 1024px) and (max-device-width: 1280px) {
+@media only screen and (min-device-width: 769px) and (max-device-width: 1280px) {
     #menuToggle {
         display: none;
     }
