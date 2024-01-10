@@ -942,7 +942,7 @@ p.wait {
 }
 
 /* Form End */
-/* wall frame */
+/* wall fame */
 .main-title {
     color: #2d2d2d;
     text-align: center;
@@ -950,12 +950,12 @@ p.wait {
     padding: 0.7em 0;
 }
 
-.frame-title {
+.fame-title {
     width: 80%;
     margin: 0 auto;
 }
 
-.frame-title h3 {
+.fame-title h3 {
     font-family: "Mitra LT Bold";
     font-size: 62px;
     letter-spacing: 4px;
@@ -965,7 +965,7 @@ p.wait {
     padding-top: 32px;
 }
 
-.frame-title p {
+.fame-title p {
     color: #fff;
 }
 
@@ -981,14 +981,14 @@ img.content-image {
     height: 164px;
 }
 
-.img-frame {
+.img-fame {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     padding: 0 10% 0 10%;
 }
 
-.wall-frame {
+.wall-fame {
     background-color: #245677;
 }
 
@@ -1486,7 +1486,7 @@ img.content-image {
         text-align: center;
         font-size: 22px;
     }
-    .frame-title h3{
+    .fame-title h3{
         font-size: 48px;
         letter-spacing: 0;
     }
@@ -1498,6 +1498,10 @@ img.content-image {
     .vl{
         margin: 0 18px;
         height: 30px;
+    }
+    .wall-fame {
+        width: 80%;
+        margin: 0 auto;
     }
 
 }
