@@ -300,9 +300,12 @@
 .main_container {
     width: 100%;
 }
+img.design-frst {
+    width: 8%;
+}
 
 .main_container img {
-    width: 8%;
+    /* width: 8%; */
     float: right;
 }
 
@@ -1392,12 +1395,16 @@ img.content-image {
     }
 
     p.step-title {
-        font-size: 18px;
+        font-size: 14px;
+    }
+    .step .desc {
+        font-size: 9px;
     }
 
     .campaign p {
         margin: 18px 26px 0 0;
         font-size: 18px;
+        text-align: left;
     }
 
     .design-for img {
@@ -1519,34 +1526,41 @@ img.content-image {
     }
 }
 
-/* @media only screen and (max-width: 1024px){
-    #menuToggle{
-        display: none;
-    }
-} */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1280px) {
+@media only screen and (min-device-width: 769px) and (max-device-width: 1280px) {
     #menuToggle {
         display: none;
     }
 
-    .doc-icon {
-        width: 38% !important;
-    }
 
     .campaign p {
         text-align: left;
-    }
-
-    .img-row {
-        top: -18%;
-        right: 34px;
     }
     .multi-logo{
         margin-top: 146px;
     }
 }
-@media only screen and (min-device-width: 400px) and (max-device-width: 768px){
+@media screen and (max-width: 767px) {
     .doc-icon {
-        width: 40% !important;
+        width: 38% !important;
     }
 }
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .doc-icon {
+        width: 29% !important;
+    }
+    .img-row {
+        top: -16%;
+        right: 62px;
+    }
+    .design-for img {
+        width: 92px;
+    }
+}
+
+/* @media screen and (min-width: 1024px) {
+    .campaign p {
+        text-align: right;
+    }    
+    
+} */
