@@ -1216,8 +1216,8 @@ img.content-image {
     }
 
     .img-row {
-        top: -14%;
-        right: -2px;
+        top: -11%;
+        right: 10px;
         max-width: 80%;
         width: 100%;
     }
@@ -1541,7 +1541,7 @@ img.content-image {
 }
 @media screen and (max-width: 767px) {
     .doc-icon {
-        width: 38% !important;
+        width: 50% !important;
     }
 }
 
@@ -1555,6 +1555,9 @@ img.content-image {
     }
     .design-for img {
         width: 92px;
+    }
+    .campaign{
+        margin-left: 98px;
     }
 }
 
