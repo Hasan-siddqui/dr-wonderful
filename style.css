@@ -910,7 +910,7 @@ p.wait {
 .design-section {
     width: 100%;
     position: absolute;
-    top: -190px;
+    top: 96.3%;
     left: 0;
     right: 0;
     bottom: 0;
@@ -1551,7 +1551,7 @@ img.content-image {
         margin-top: -62px;
     }
     .design-section {
-        top: -123px;
+        top: 97.6%;
     }
 
 }
@@ -1620,6 +1620,9 @@ img.content-image {
     }
     .c3-logo {
         margin: 18px 28px 4px 0px;
+    }
+    .design-section {
+        top: 93.6%;
     }
 }
 
