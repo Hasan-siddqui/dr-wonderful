@@ -26,7 +26,7 @@
 .progress__indicator .fa {
     /* display: none; */
     font-size: 16px;
-    color: #ff783b;
+    color: #ffffff;
 }
 
 .vl {
@@ -380,6 +380,7 @@ img.design-frst {
 
 .design-sec {
     width: 33%;
+    margin-top: 22px;
 }
 
 .design-sec img {
@@ -778,6 +779,7 @@ progress::-webkit-progress-value {
     animation: bounce 0.5s forwards;
     animation-delay: 0.5s;
     border-color: #8aad48;
+    background-color: #8aad48;
 }
 .step {
     width: 103px;
@@ -805,7 +807,7 @@ p.step-title {
     position: relative;
     width: 100%;
     transition: 0.3s;
-    /* will-change: padding; */
+    will-change: padding;
     overflow: hidden;
 }
 
