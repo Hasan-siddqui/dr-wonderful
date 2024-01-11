@@ -656,6 +656,7 @@ button.next-btn {
     font-size: 16px;
     font-weight: 600;
     cursor: pointer;
+    padding: 4px 4px 4px 4px;
 }
 
 /* .next-btn :hover {
@@ -668,6 +669,7 @@ button.back-btn {
     font-size: 16px;
     font-weight: 600;
     cursor: pointer;
+    padding: 4px 4px 4px 4px;
 }
 
 button.next-btn i {
