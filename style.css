@@ -8,6 +8,27 @@
     box-sizing: border-box;
 }
 
+.progress__indicator {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.progress__indicator .fa {
+    display: block;
+}
+.progress__indicator {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.progress__indicator .fa {
+    /* display: none; */
+    font-size: 16px;
+    color: #ff783b;
+}
+
 .vl {
     border-left: 2px solid #fb863a;
     height: 48px;
@@ -16,8 +37,8 @@
 
 .vertical {
     border-left: 2px solid #fb863a;
-    height: 22px;
-    margin: 0 6px 0 -8px;
+    height: 23px;
+    margin: 0 6px 5px -10px;
 }
 
 .supporter {
@@ -27,6 +48,7 @@
     justify-content: flex-end;
     padding: 6px 3% 0 0;
     background-color: #f1f2f2;
+    margin-top: -3px;
 
 }
 
@@ -300,6 +322,7 @@
 .main_container {
     width: 100%;
 }
+
 img.design-frst {
     width: 8%;
 }
@@ -343,8 +366,8 @@ img.design-frst {
 }
 
 .img-row {
-    top: -24%;
-    right: 221px;
+    top: -26%;
+    right: 264px;
     max-width: 80%;
     width: 70%;
 }
@@ -419,12 +442,12 @@ img.design-frst {
 }
 
 .certificate-sec {
-    max-width: 738px;
+    max-width: 920px;
     margin: 5vh auto 0 auto;
     background: white;
-    box-shadow: 3px 12px 20px 10px #00000029;
-    padding-top: 26px;
-    /* box-shadow: 0 1px 2px rgba(0, 0, 0, .3); */
+    margin-bottom: 150px;
+    /* box-shadow: 3px 12px 20px 10px #00000029; */
+    box-shadow: 1px 0px 12px 3px rgba(0, 0, 0, .3);
 }
 
 /* .section:before {
@@ -439,7 +462,7 @@ img.design-frst {
 } */
 .form-instructions {
     line-height: 26px;
-    margin: 66px 0 0px 0;
+    margin: 50px 0 0px 0;
     font-size: 28px;
     color: #fb7633;
     text-align: center;
@@ -448,7 +471,7 @@ img.design-frst {
 .coming .form-instructions {
     font-size: 28px;
     text-align: left !important;
-    margin-left: 66px;
+    margin: 50px 0 22px 0;
 }
 
 .certificate-heading h2 {
@@ -682,9 +705,10 @@ form .btn {
 .form-progress {
     position: relative;
     display: block;
-    margin: 3rem auto;
+    margin: 2rem auto;
     width: 100%;
-    max-width: 598px;
+    max-width: 780px;
+    margin-bottom: 8rem;
 }
 
 /* label.prog-cneter {
@@ -721,11 +745,11 @@ progress::-webkit-progress-value {
 
 .form-progress-indicator {
     position: absolute;
-    top: -6px;
+    top: -14px;
     left: 0;
     display: inline-block;
-    width: 20px;
-    height: 20px;
+    width: 36px;
+    height: 36px;
     background: white;
     border: 3px solid #ddd;
     border-radius: 50%;
@@ -755,10 +779,9 @@ progress::-webkit-progress-value {
     animation-delay: 0.5s;
     border-color: #8aad48;
 }
-
 .step {
-    width: 80px;
-    margin: 23px 0 0 -36px;
+    width: 103px;
+    margin: 0 0 0 -36px;
 }
 
 .step p {
@@ -886,17 +909,23 @@ p.wait {
 
 .design-section {
     width: 100%;
-    display: flex;
+    position: absolute;
+    top: -190px;
+    left: 0;
+    right: 0;
+    bottom: 0;
 }
 
 .design-for {
     width: 50%;
     display: flex;
+    float: left;
 }
 
 .design-five {
     width: 50%;
     float: right;
+    margin-top: 60px;
 }
 
 .design-for img {
@@ -1277,6 +1306,7 @@ img.content-image {
     .form-progress {
         width: 80%;
         max-width: 598px;
+        margin-right: 50px;
     }
 
     .pra-text p {
@@ -1391,12 +1421,14 @@ img.content-image {
     }
 
     .step {
-        margin: 23px 0 0 -47px
+        width: 65px;
+        margin: 0px 0 0 -18px;
     }
 
     p.step-title {
         font-size: 14px;
     }
+
     .step .desc {
         font-size: 9px;
     }
@@ -1516,6 +1548,10 @@ img.content-image {
     .wall-fame {
         width: 100%;
         margin: 0 auto;
+        margin-top: -62px;
+    }
+    .design-section {
+        top: -123px;
     }
 
 }
@@ -1535,13 +1571,18 @@ img.content-image {
     .campaign p {
         text-align: left;
     }
-    .multi-logo{
+
+    .multi-logo {
         margin-top: 146px;
     }
 }
+
 @media screen and (max-width: 767px) {
     .doc-icon {
-        width: 50% !important;
+        width: 46% !important;
+    }
+    .img-row {
+        top: -8%;
     }
 }
 
@@ -1549,15 +1590,36 @@ img.content-image {
     .doc-icon {
         width: 29% !important;
     }
+
     .img-row {
-        top: -16%;
+        top: -20%;
         right: 62px;
     }
+
     .design-for img {
         width: 92px;
     }
-    .campaign{
+
+    .campaign {
         margin-left: 98px;
+    }
+
+    .fotter-dr_logo img {
+        width: 40%;
+    }
+    .form-progress {
+        width: 75%;
+        max-width: 598px;
+        margin-right: 102px;
+    }
+    .design-five {
+        margin-top: -8px;
+    }
+    #menuToggle{
+        left: 28px;
+    }
+    .c3-logo {
+        margin: 18px 28px 4px 0px;
     }
 }
 

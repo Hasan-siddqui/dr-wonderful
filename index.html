@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Dr. Wonderful</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,6 +14,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <script src="https://use.fontawesome.com/c47bc38e87.js"></script>
 </head>
 
 <body>
@@ -134,46 +136,53 @@
             <div class="campaign" id="campaign">
                 <h2>Be The Change <br> Join The <span style="color: #fb7633; font-family: Mitra LT Bold;">Campaign</span></h2>
                 <p>4 Simple Steps To Make a Difference</p>
-
             </div>
-            <div class="section certificate-sec">
-                <h2>GET YOUR CERTIFICATE</h2>
+            <div class="form-progress">
+                <progress class="form-progress-bar" min="0" max="100" value="0" step="33"
+                    aria-labelledby="form-progress-completion"></progress>
 
-                <div class="form-progress">
-                    <progress class="form-progress-bar" min="0" max="100" value="0" step="33"
-                        aria-labelledby="form-progress-completion"></progress>
-
-                    <div class="form-progress-indicator one active">
-                        <div class="step">
-                            <p class="step-title">Step 1</p>
-                            <p class="desc">Fill info</p>
-                        </div>
+                <div class="form-progress-indicator one active">
+                    <div class="progress__indicator">
+                        <i class="fa fa-check"></i>
                     </div>
-                    <div class="form-progress-indicator two">
-                        <div class="step">
-                            <p class="step-title">Step 2</p>
-                            <p class="desc">Take The Pledge</p>
-                        </div>
+                    <div class="step">
+                        <p class="step-title">Step 1</p>
+                        <p class="desc">Fill info</p>
                     </div>
-                    <div class="form-progress-indicator three">
-                        <div class="step">
-                            <p class="step-title">Step 3</p>
-                            <p class="desc">Get your Certificate</p>
-                        </div>
+                </div>
+                <div class="form-progress-indicator two">
+                    <div class="progress__indicator">
+                        <i class="fa fa-check"></i>
                     </div>
-                    <div class="form-progress-indicator four">
-                        <div class="step">
-                            <p class="step-title">Step 3</p>
-                            <p class="desc">Get Featured</p>
-                        </div>
+                    <div class="step">
+                        <p class="step-title">Step 2</p>
+                        <p class="desc">Take The Pledge</p>
                     </div>
-
-                    <p id="form-progress-completion" class="js-form-progress-completion sr-only" aria-live="polite">0%
-                        complete
-                    </p>
+                </div>
+                <div class="form-progress-indicator three">
+                    <div class="progress__indicator">
+                        <i class="fa fa-check"></i>
+                    </div>
+                    <div class="step">
+                        <p class="step-title">Step 3</p>
+                        <p class="desc">Get your Certificate</p>
+                    </div>
+                </div>
+                <div class="form-progress-indicator four">
+                    <div class="progress__indicator">
+                        <i class="fa fa-check"></i>
+                    </div>
+                    <div class="step">
+                        <p class="step-title">Step 3</p>
+                        <p class="desc">Get Featured</p>
+                    </div>
                 </div>
 
-
+                <p id="form-progress-completion" class="js-form-progress-completion sr-only" aria-live="polite">0%
+                    complete
+                </p>
+            </div>
+            <div class="certificate-sec">
                 <div class="animation-container">
                     <!-- Step one -->
                     <div class="form-step js-form-step" data-step="1">
@@ -249,10 +258,9 @@
                     <!-- Step two -->
                     <div class="form-step js-form-step waiting hidden" data-step="2">
 
-                        <p class="form-instructions"><strong>Take The Pledge</strong></p>
-
                         <form action="" name="form-step-2">
                             <div class="frm-container">
+                                <p class="form-instructions"><strong>Take The Pledge</strong></p>
                                 <div class="prom-check-box">
                                     <h3>My Promises to My Patients</h3>
                                     <p>I am dedicated to providing my patients with the utmost care and support during
@@ -333,11 +341,9 @@
 
                     <!-- Step four -->
                     <div class="form-step js-form-step waiting hidden" data-step="4">
-
-                        <p class="form-instructions"><strong>We’d love to feature you</strong></p>
-
                         <form action="" name="form-step-4">
                             <div class="frm-container">
+                                <p class="form-instructions"><strong>We’d love to feature you</strong></p>
                                 <div class="share-doc">
                                     <div class="share-icon">
                                         <img src="./images/share-icon.png" alt="share-icon">
@@ -391,16 +397,8 @@
                 <img class="doc-icon" src="./images/doctor.png" alt="">
             </div>
         </section>
-        <div class="design-section">
-            <div class="design-for">
-                <img src="./images/design-4.png" alt="design">
-            </div>
-            <div class="design-five">
-                <img src="./images/design-5.png" alt="design">
-            </div>
-        </div>
         
-        <section>
+        <section style="position: relative;">
             <div class="wall-fame" id="wall-fame">
                 <div class="fame-title">
                     <h3>Wall Of Fame</h3>
@@ -604,6 +602,14 @@
                     </div>
                 </div>
             </div>
+            <div class="design-section">
+                <div class="design-for">
+                    <img src="./images/design-4.png" alt="design">
+                </div>
+                <div class="design-five">
+                    <img src="./images/design-5.png" alt="design">
+                </div>
+            </div>
             <div class="yellow-height"></div>
         </section>
 
@@ -659,6 +665,7 @@
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.11/vue.min.js"></script>
     <script src="script.js"></script>
     <script>
         // Get the "Check All" checkbox and all other checkboxes
