@@ -555,6 +555,7 @@ img.design-frst {
 .certificate-heading h2 {
     color: #000;
     font-weight: 100;
+    font-size: 22px;
 }
 
 p.form-instructions-1 {
@@ -1704,6 +1705,32 @@ img.content-image {
     .prom-check-box label{
         margin: 0;
     }
+    .participat h2 {
+        font-size: 22px;
+    }
+    .certificate-heading h2 {
+        font-size: 18px;
+        color: #000;
+    }
+    .share-doc {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    .share-icon {
+        width: 100%;
+        /* float: left; */
+    }
+    .share-icon img {
+        width: 66%;
+        margin-left: 10%;
+    }
+    .share-text {
+        width: 100%;
+        /* float: right; */
+    }
 
 }
 
@@ -1846,6 +1873,10 @@ img.content-image {
     }
     .input-group-append {
         margin-left: -4px !important;
+    }
+    .share-icon img {
+        width: 48%;
+        float: left;
     }
     
 }
