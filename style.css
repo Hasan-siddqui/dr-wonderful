@@ -1565,6 +1565,10 @@ img.content-image {
         width: 24px;
         height: 24px;
     }
+    .progress__indicator {
+        width: 19px;
+        height: 19px;
+    }
 
 }
 
