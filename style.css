@@ -24,7 +24,7 @@
 }
 
 .progress__indicator .fa {
-    display: none;
+/*     display: none; */
     font-size: 16px;
     color: #ffffff;
 }
@@ -784,7 +784,7 @@ progress::-webkit-progress-value {
     animation: bounce 0.5s forwards;
     animation-delay: 0.5s;
     border-color: #8aad48;
-    /* background-color: #8aad48; */
+    background-color: #8aad48;
 }
 .step {
     width: 103px;
