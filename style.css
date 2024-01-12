@@ -426,7 +426,7 @@ img.design-frst {
 }
 
 .img-row {
-    top: -26%;
+    top: -22%;
     right: 264px;
     max-width: 80%;
     width: 70%;
@@ -464,7 +464,7 @@ img.design-frst {
 }
 
 .doc-icon {
-    width: 24% !important;
+    width: 22% !important;
 }
 
 .campaign {
@@ -920,7 +920,7 @@ p.step-title {
 }
 
 .prom-check-box h3 {
-    margin: 0 0 6px 0;
+    margin: 0 0 12px 0;
     font-size: 20px;
     color: #000;
     font-weight: bolder;
@@ -1697,6 +1697,13 @@ img.content-image {
     .cong-logo img {
         width: 54%;
     }
+    .prom-check-box h3 {
+        margin: 6px 0 12px 0;
+        font-size: 18px;
+    }
+    .prom-check-box label{
+        margin: 0;
+    }
 
 }
 
@@ -1832,7 +1839,7 @@ img.content-image {
     .social-title{
         float: left;
         max-width: 20.666667% !important;
-        font-size: 22px;
+        font-size: 18px;
     }
     input#fb_link{
         width: 220px;
