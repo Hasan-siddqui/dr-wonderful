@@ -541,6 +541,21 @@ img.design-frst {
     color: #ff7a3c;
     margin: 66px 0 0px 0;
 }
+.participat h2 {
+    font-size: 28px;
+    text-align: left;
+    color: #ff7a3c;
+    margin: 66px 0 0px 0;
+    font-weight: 600;
+}
+.participat p {
+    margin: 12px 0 -44px 0;
+    line-height: 26px;
+}
+.certificate-heading h2 {
+    color: #000;
+    font-weight: 100;
+}
 
 p.form-instructions-1 {
     text-align: center;
@@ -936,7 +951,7 @@ p.step-title {
 p.wait {
     color: #000;
     font-weight: 600;
-    margin: 48px 0;
+    margin: 46px 0 66px;
 }
 
 .share-doc {
@@ -1668,6 +1683,19 @@ img.content-image {
     }
     input#fb_link {
         width: 130px;
+    }
+    .congrate-heading h2 {
+        font-size: 36px;
+        font-weight: 500;
+        margin: 22px 0 !important;
+    }
+    .cong-para p {
+        width: 88% !important;
+        line-height: 30px;
+        font-size: 16px;
+    }
+    .cong-logo img {
+        width: 54%;
     }
 
 }
