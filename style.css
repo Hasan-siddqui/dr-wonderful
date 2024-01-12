@@ -24,7 +24,7 @@
 }
 
 .progress__indicator .fa {
-    /* display: none; */
+    display: none;
     font-size: 16px;
     color: #ffffff;
 }
@@ -528,7 +528,7 @@ input#inst-check {
 }
 
 .prom-check-box label {
-    top: -0.1rem;
+    top: -1.2rem;
     line-height: 18px;
     margin-bottom: 22px;
 }
@@ -778,10 +778,13 @@ progress::-webkit-progress-value {
 }
 
 .form-progress-indicator.active {
+    background-image: url(./images/right-tick.png);
+    background-repeat: no-repeat;
+    background-size: cover;
     animation: bounce 0.5s forwards;
     animation-delay: 0.5s;
     border-color: #8aad48;
-    background-color: #8aad48;
+    /* background-color: #8aad48; */
 }
 .step {
     width: 103px;
@@ -1148,8 +1151,8 @@ img.content-image {
 }
 
 .practo-logo img {
-    width: 70%;
-    margin: 8px 15px 0 -22px;
+    width: 66%;
+    margin: 8px 43px 0 -22px;
 }
 
 .footer-left {
@@ -1434,7 +1437,7 @@ img.content-image {
     }
 
     .step .desc {
-        font-size: 9px;
+        font-size: 10px;
     }
 
     .campaign p {
@@ -1464,7 +1467,7 @@ img.content-image {
 
     input#checkAll {
         position: absolute;
-        top: 217px;
+        top: 243px;
     }
 
     /* label.prog-cneter {
@@ -1557,6 +1560,11 @@ img.content-image {
     .design-section {
         top: 97.6%;
     }
+    .form-progress-indicator {
+        top: -8px;
+        width: 24px;
+        height: 24px;
+    }
 
 }
 
@@ -1579,14 +1587,18 @@ img.content-image {
     .multi-logo {
         margin-top: 146px;
     }
+    .img-row {
+        top: -12%;
+        right: 225px;
+    } 
 }
 
 @media screen and (max-width: 767px) {
     .doc-icon {
-        width: 46% !important;
+        width: 41% !important;
     }
     .img-row {
-        top: -8%;
+        top: -6%;
     }
 }
 
@@ -1596,7 +1608,7 @@ img.content-image {
     }
 
     .img-row {
-        top: -20%;
+        top: -23%;
         right: 62px;
     }
 
@@ -1612,9 +1624,9 @@ img.content-image {
         width: 40%;
     }
     .form-progress {
-        width: 75%;
+        width: 77%;
         max-width: 598px;
-        margin-right: 102px;
+        margin-right: 61px;
     }
     .design-five {
         margin-top: -8px;
@@ -1631,8 +1643,6 @@ img.content-image {
 }
 
 /* @media screen and (min-width: 1024px) {
-    .campaign p {
-        text-align: right;
-    }    
+       
     
 } */
