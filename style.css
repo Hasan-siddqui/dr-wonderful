@@ -7,6 +7,53 @@
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
+.form-row-1 {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 61.666667% !important;
+}
+.social-icon {
+    display: flex;
+    align-items: center;
+    padding: 14px 0 !important;
+}
+.social-title{
+    float: left;
+    max-width: 20.666667% !important;
+    font-size: 16px;
+    color: #757575;
+    padding: 28px 0 !important;
+}
+span.input-group-text-1 {
+    font-size: 14px;
+    color: #757575;
+}
+input#fb_link {
+    width: 120px;
+    border-color: #989898 !important;
+    margin: -1px 0 0 6px;
+}
+.fb-icon:before {
+    padding: 3px 7px !important;
+    border-radius: 50px !important;
+}
+.twitter-icon:before{
+    padding: 3px 3px !important;
+    border-radius: 50px !important;
+}
+.linkedin-icon:before{
+    padding: 4px 6px !important;
+    border-radius: 50px !important;
+}
+.instagram-icon:before{
+    padding: 3px 5px !important;
+    border-radius: 50px !important;
+}
+.input-group-append {
+    margin-left: -4px !important;
+}
+
 
 .progress__indicator {
     display: flex;
@@ -348,6 +395,7 @@ img.design-frst {
     letter-spacing: 4px;
     margin: 50px 0 0 0;
     color: #fb7633;
+    font-weight: 600;
 }
 
 .pra-text p {
@@ -762,19 +810,19 @@ progress::-webkit-progress-value {
 }
 
 .form-progress-indicator.one {
-    left: 0;
+    left: -3%;
 }
 
 .form-progress-indicator.two {
-    left: 33%;
+    left: 30%;
 }
 
 .form-progress-indicator.three {
-    left: 66%;
+    left: 63%;
 }
 
 .form-progress-indicator.four {
-    left: 100%;
+    left: 97%;
 }
 
 .form-progress-indicator.active {
@@ -1008,6 +1056,7 @@ p.wait {
 
 .fame-title p {
     color: #fff;
+    font-size: 18px;
 }
 
 .container-img {
@@ -1569,6 +1618,18 @@ img.content-image {
         width: 19px;
         height: 19px;
     }
+    .social-title {
+        max-width: 100% !important;
+        padding: 4px 0 0 0 !important;
+    }
+    .form-row-1 {
+        width: 100%;
+        max-width: 100% !important;
+        flex-direction: column;
+    }
+    input#fb_link {
+        width: 130px;
+    }
 
 }
 
@@ -1612,7 +1673,7 @@ img.content-image {
     }
 
     .img-row {
-        top: -23%;
+        top: -20%;
         right: 62px;
     }
 
@@ -1633,7 +1694,7 @@ img.content-image {
         margin-right: 61px;
     }
     .design-five {
-        margin-top: -8px;
+        margin-top: 34px;
     }
     #menuToggle{
         left: 28px;
@@ -1644,9 +1705,73 @@ img.content-image {
     .design-section {
         top: 93.6%;
     }
+    .form-row-1 {
+        width: 100%;
+        max-width: 100% !important;
+        display: flex;
+        flex-direction: row;
+    }
+    form {
+        margin: 1rem 0 4rem 0;
+        width: 100%;
+    }
 }
 
 /* @media screen and (min-width: 1024px) {
        
     
 } */
+@media (min-width: 1920px) and (max-width: 2560px)  {
+    .campaign h2 {
+        width: 42%;
+    }
+    .img-row {
+        top: -23%;
+        right: 24%;
+    }
+    .doc-icon {
+        width: 16% !important;
+    }
+    .form-progress{
+        max-width: 920px;
+    }
+    .certificate-sec{
+        max-width: 1140px;
+    }
+    .frm-container{
+        width: 920px !important;
+    }
+    .design-sec {
+        margin-top: -89px;
+    }
+    .design-five {
+        margin-top: 5px;
+    }
+    form {
+        margin: 1rem 0 7rem 0;
+    }
+    .design-for {
+        margin-top: -4%;
+    }
+    .form-row-1 {
+        display: flex;
+        justify-content: space-between;
+        max-width: 64.666667% !important;    
+    }
+    .social-icon {
+        display: flex;
+        align-items: center;
+    }
+    .social-title{
+        float: left;
+        max-width: 20.666667% !important;
+        font-size: 22px;
+    }
+    input#fb_link{
+        width: 220px;
+    }
+    .input-group-append {
+        margin-left: -4px !important;
+    }
+    
+}
