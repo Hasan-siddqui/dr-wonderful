@@ -79,7 +79,7 @@ function showNextForm($currentForm) {
 	value += 33;
 
 	// Reset if we've reached the end
-	if (value >= 100) {
+	if (value >= 133) {
 		formReset();
 	} else {
 		$('.form-progress')

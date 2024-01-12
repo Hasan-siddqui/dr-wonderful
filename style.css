@@ -34,17 +34,29 @@ input#fb_link {
     border-color: #989898 !important;
     margin: -1px 0 0 6px;
 }
+.fb-icon{
+    margin-top: 22px;
+}
 .fb-icon:before {
     padding: 3px 7px !important;
     border-radius: 50px !important;
+}
+.twitter-icon{
+    margin-top: 22px;
 }
 .twitter-icon:before{
     padding: 3px 3px !important;
     border-radius: 50px !important;
 }
+.linkedin-icon{
+    margin-top: 22px;
+}
 .linkedin-icon:before{
     padding: 4px 6px !important;
     border-radius: 50px !important;
+}
+.instagram-icon{
+    margin-top: 22px;
 }
 .instagram-icon:before{
     padding: 3px 5px !important;
@@ -1290,7 +1302,34 @@ img.content-image {
     height: 15px;
     background-color: #f6842f;
 }
-
+/* conguratulation form */
+.congrate-heading h2 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 62px;
+    color: #ff783b;
+    margin: 50px 0 !important;
+}
+.cong-logo img {
+    width: 50%;
+}
+.cong-logo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 22px 0;
+}
+.cong-para {
+    width: 100%;
+    display: flex;
+}
+.cong-para p {
+    width: 72% !important;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 34px;
+    font-size: 20px;
+}
+/* conguratulation form */
 @media screen and (max-width:991px) {
     .certificate img {
         display: none;
