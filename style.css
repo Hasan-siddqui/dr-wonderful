@@ -83,7 +83,7 @@ input#fb_link {
 }
 
 .progress__indicator .fa {
-/*     display: none; */
+    display: none;
     font-size: 16px;
     color: #ffffff;
 }
