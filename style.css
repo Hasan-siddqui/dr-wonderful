@@ -854,13 +854,13 @@ progress::-webkit-progress-value {
 }
 
 .form-progress-indicator.active {
-    background-image: url(./images/right-tick.png);
+/*     background-image: url(./images/right-tick.png);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; */
     animation: bounce 0.5s forwards;
     animation-delay: 0.5s;
     border-color: #8aad48;
-    background-color: #8aad48;
+/*     background-color: #8aad48; */
 }
 .step {
     width: 103px;
